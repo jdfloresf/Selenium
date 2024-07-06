@@ -6,3 +6,4 @@ images/
 *.cfg
 *.log
 __pycache__/
+*.env
