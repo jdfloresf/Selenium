@@ -15,7 +15,8 @@ class LoginTest(unittest.TestCase):
         self.t = 0.1
 
         # Verifica que el archivo .env exista
-        env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'env', '.env')
+        env_path = os.path.join(os.path.dirname(os.path.dirname(
+            os.path.dirname(__file__))), 'env', '.env')
         if not os.path.exists(env_path):
             raise FileNotFoundError(f"El archivo .env no se encuentra en la" 
                                     f"ruta: {env_path}")
