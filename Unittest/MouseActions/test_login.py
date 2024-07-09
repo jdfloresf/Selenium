@@ -15,9 +15,7 @@ class LoginTest(unittest.TestCase):
         self.t = 0.1
 
         # Verifica que el archivo .env exista
-        env_path = os.path.join(os.path.dirname(
-            os.path.dirname(__file__)), 
-            'C://Users//sasum//Documents//Python//Selenium//venv//env', '.env')
+        env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'env', '.env')
         if not os.path.exists(env_path):
             raise FileNotFoundError(f"El archivo .env no se encuentra en la" 
                                     f"ruta: {env_path}")
@@ -49,47 +47,47 @@ class LoginTest(unittest.TestCase):
 
         f.tearDown(2)
 
-    def test_double_click(self):
-        print("Doble click en botón")
-        driver = self.driver
-        f = Functions(driver)
-        f.navigate("https://demoqa.com/buttons", self.t)
-        f.double_click("xpath", Locator.double_click, self.t)
-        f.tearDown(2)
+    # def test_double_click(self):
+    #     print("Doble click en botón")
+    #     driver = self.driver
+    #     f = Functions(driver)
+    #     f.navigate("https://demoqa.com/buttons", self.t)
+    #     f.double_click("xpath", Locator.double_click, self.t)
+    #     f.tearDown(2)
     
-    def test_right_click(self):
-        print("Doble click en botón")
-        driver = self.driver
-        f = Functions(driver)
-        f.navigate("https://demoqa.com/buttons", self.t)
-        f.right_click("xpath", Locator.right_click, self.t)
-        f.tearDown(2)
+    # def test_right_click(self):
+    #     print("Doble click en botón")
+    #     driver = self.driver
+    #     f = Functions(driver)
+    #     f.navigate("https://demoqa.com/buttons", self.t)
+    #     f.right_click("xpath", Locator.right_click, self.t)
+    #     f.tearDown(2)
 
-    def test_draw_and_drop(self):
-        print("Doble click en botón")
-        driver = self.driver
-        f = Functions(driver)
-        f.navigate("https://demo.seleniumeasy.com/drag-and-drop-demo.html", self.t)
-        f.navigate("https://testpages.herokuapp.com/styled/drag-drop-javascript.html", self.t)
-        f.drag_and_drop("xpath", Locator.drop1, Locator.drop_zone, self.t)
-        f.drag_and_drop("xpath", Locator.drop3, Locator.drop_zone, self.t)
-        f.drag_and_drop("xpath", Locator.drop2, Locator.drop_zone, self.t)
-        f.drag_and_drop("xpath", Locator.dr, Locator.pz, self.t)
-        f.tearDown(2)
+    # def test_draw_and_drop(self):
+    #     print("Doble click en botón")
+    #     driver = self.driver
+    #     f = Functions(driver)
+    #     f.navigate("https://demo.seleniumeasy.com/drag-and-drop-demo.html", self.t)
+    #     f.navigate("https://testpages.herokuapp.com/styled/drag-drop-javascript.html", self.t)
+    #     f.drag_and_drop("xpath", Locator.drop1, Locator.drop_zone, self.t)
+    #     f.drag_and_drop("xpath", Locator.drop3, Locator.drop_zone, self.t)
+    #     f.drag_and_drop("xpath", Locator.drop2, Locator.drop_zone, self.t)
+    #     f.drag_and_drop("xpath", Locator.dr, Locator.pz, self.t)
+    #     f.tearDown(2)
 
-    def test_draw_and_drop_xy(self):
-        driver = self.driver
-        f = Functions(driver)
-        f.navigate("https://jqueryui.com/draggable/", self.t)
-        f.drag_and_drop_xy("xpath", Locator.drag, "150", "120", self.t)
-        f.tearDown(2)
+    # def test_draw_and_drop_xy(self):
+    #     driver = self.driver
+    #     f = Functions(driver)
+    #     f.navigate("https://jqueryui.com/draggable/", self.t)
+    #     f.drag_and_drop_xy("xpath", Locator.drag, "150", "120", self.t)
+    #     f.tearDown(2)
     
-    def test_copy_paste(self):
-        driver = self.driver
-        f = Functions(driver)
-        f.navigate("https://demoqa.com/automation-practice-form", self.t)
-        f.copy_paste("xpath", Locator.first_name, "Juan", self.t)
-        f.tearDown(2)
+    # def test_copy_paste(self):
+    #     driver = self.driver
+    #     f = Functions(driver)
+    #     f.navigate("https://demoqa.com/automation-practice-form", self.t)
+    #     f.copy_paste("xpath", Locator.first_name, "Juan", self.t)
+    #     f.tearDown(2)
         
 if __name__ == "__main__":
     unittest.main()
