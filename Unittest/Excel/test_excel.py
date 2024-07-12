@@ -3,7 +3,7 @@ import unittest
 from selenium import webdriver
 import unittest.test
 
-from POM.Funtions import Functions
+from POM.Functions import Functions
 from Locator import Locator
 from Excel_Functions import *
 
@@ -20,7 +20,7 @@ class TestExcel(unittest.TestCase):
 
         f.navigate("https://demoqa.com/text-box", 2)
 
-        path = "C://Users//sasum//Documents//Python//Selenium//venv//Excel//Datos.xlsx"
+        path = "C://Users//sasum//Documents//Python//Selenium//venv//Unittest//Excel//Datos.xlsx"
         rows = ef.getRowCount(path, "Hoja1")
 
         for row in range(2, rows+1):
@@ -29,11 +29,11 @@ class TestExcel(unittest.TestCase):
             dir1 = ef.readData(path, "Hoja1", row, 3)
             dir2 = ef.readData(path, "Hoja1", row, 4)
 
-            f.validate_by_locator("xpath", Locator.name, nombre, self.t)
-            f.validate_by_locator("xpath", Locator.email, email, self.t)
-            f.validate_by_locator("xpath", Locator.current_address, dir1, self.t)
-            f.validate_by_locator("xpath", Locator.permanet_address, dir2, self.t)
-            f.click_element_by_locator("xpath", Locator.sumit, self.t)
+            f.validate_and_send_keys("xpath", Locator.name, nombre, self.t)
+            f.validate_and_send_keys("xpath", Locator.email, email, self.t)
+            f.validate_and_send_keys("xpath", Locator.current_address, dir1, self.t)
+            f.validate_and_send_keys("xpath", Locator.permanet_address, dir2, self.t)
+            f.click("xpath", Locator.sumit, self.t)
 
             existe = f.exit_element("xpath", Locator.exist_name, self.t)
             if existe == "Existe":
