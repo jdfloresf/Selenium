@@ -7,3 +7,4 @@ images/
 *.log
 __pycache__/
 *.env
+*.pyetst_cache/

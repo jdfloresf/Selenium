@@ -23,7 +23,7 @@ class Functions:
         Args:
             t (int): Tiempo en segundos para esperar.
         """
-        sleep(t)
+        self.driver.implicitly_wait(t)
 
     def navigate(self, Url:str, t:int):
         """Navega a una URL especificada y maximiza la ventana del navegador.
