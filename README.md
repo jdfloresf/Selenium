@@ -25,7 +25,23 @@ En este proyecto, utilizamos dos frameworks de pruebas en Python:
 - **POM**: Este módulo contiene funciones personalizadas que realicé utilizando Selenium. Incluye funciones como navegar a una URL, hacer clic, subir archivos, etc. El módulo está organizado siguiendo el patrón de diseño Page Object Model.
 - **Unittest**: Este módulo contiene pruebas unitarias utilizando el framework `unittest`.
 - **env**: Variables de entorno usadas en el módulo de `unittest`.
-- **pytest**: Pruebas unitarias utilizando el framework `pytest`.
+- **pytest**: Este módulo contiene pruebas unitarias utilizando el framework `pytest`. También incluye los siguientes directorios:
+  - **allure_reports**: Directorio que contiene los reportes generados por Allure.
+  - **html_reports**: Archivo generado con los reportes después de ejecutar las pruebas.
+  - Archivos de prueba: Archivos de prueba que utilizan `pytest` para ejecutar pruebas automatizadas.
+- **BDD**: Este módulo contiene archivos relacionados con el desarrollo guiado por comportamiento (BDD).
+  - **features**: Directorio que contiene los archivos `.feature` escritos en Gherkin, que describen los escenarios de prueba.
+  - **steps**: Directorio que contiene los archivos `.py` con la implementación de los pasos (`steps`) para los escenarios de prueba definidos en los archivos `.feature`.
 - **.gitignore**: Archivo de configuración para excluir archivos y directorios específicos del control de versiones.
 - **select_upload.py**: Archivo de prueba.
 - **test_formulario.py**: Archivo de prueba.
+
+## Links
+
+Sitios web utilizados durante el curso
+- [Swag Labs](https://www.saucedemo.com/)
+- [seleniumeasy](https://demo.seleniumeasy.com/)
+- [ToolQA](https://demoqa.com/)
+- [OrangeHRM](https://opensource-demo.orangehrmlive.com/web/index.php/auth/login)
+- [Herokuapp upload file](https://testpages.herokuapp.com/styled/file-upload-test.html)
+- [jQuery draggable](https://jqueryui.com/draggable/)

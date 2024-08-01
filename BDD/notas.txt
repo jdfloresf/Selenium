@@ -15,3 +15,6 @@ especificado.
 Se puede instalar mediente pip
 
     pip install behave
+
+Para ejecutar las pruebas se usa el siguiente comando desde el directirio del proyecto
+    behave
