@@ -22,7 +22,7 @@ En este proyecto, utilizamos dos frameworks de pruebas en Python:
 
 ## Estructura del Proyecto
 
-- **POM**: Este módulo contiene funciones personalizadas que realicé utilizando Selenium. Incluye funciones como navegar a una URL, hacer clic, subir archivos, etc. El módulo está organizado siguiendo el patrón de diseño Page Object Model.
+- **POM**: Este módulo contiene funciones personalizadas que realicé utilizando Selenium. Incluye funciones como navegar a una URL, hacer click, subir archivos, etc. El módulo está organizado siguiendo el patrón de diseño Page Object Model.
 - **Unittest**: Este módulo contiene pruebas unitarias utilizando el framework `unittest`.
 - **env**: Variables de entorno usadas en el módulo de `unittest`.
 - **pytest**: Este módulo contiene pruebas unitarias utilizando el framework `pytest`. También incluye los siguientes directorios:
