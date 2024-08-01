@@ -45,9 +45,4 @@ def test_set_image(setup):
     time.sleep(2)
     f.click("css", Locator.edit_button, t)
     driver.implicitly_wait(2)
-    existe = f.validate_element("xpath", Locator.upload)
-    if existe:
-        f.upload_file("xpath", Locator.upload, "C://Users//sasum//Documents//Python//Selenium//venv//images//hp.jpg", t)
-    else:
-        print("Algo salio mal")
-    
+    f.upload_file("xpath", Locator.upload, "C://Users//sasum//Documents//Python//Selenium//venv//images//hp.jpg", t)

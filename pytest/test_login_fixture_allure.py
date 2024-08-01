@@ -1,12 +1,17 @@
 import pytest
+import allure
 
 from selenium import webdriver
+from allure_commons.types import AttachmentType
+
 from POM.Functions import Functions
 from Locator import Locator
+
 
 # Fixture para la configuración del driver de Selenium y la navegación inicial
 @pytest.fixture
 def setup():
+    global driver
     driver = webdriver.Edge()  # Inicializa el driver de Edge
     t = 0.1  # Tiempo de espera entre acciones
     f = Functions(driver)  # Instancia de la clase Functions
@@ -27,6 +32,8 @@ def test_login(setup):
     # Verifica que el elemento dashboard exista
     dashboard = f.exit_element("xpath", Locator.dashboard, t)
     if dashboard == "Existe":
+        allure.attach(driver.get_screenshot_as_png(), name="Login_correcto", 
+                  attachment_type=AttachmentType.PNG)
         print("Login Correcto")
 
 # Prueba del login con el campo de email vacío

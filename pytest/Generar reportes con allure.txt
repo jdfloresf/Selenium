@@ -1,0 +1,36 @@
+Allure es una herramienta de generación de reportes para pruebas automatizadas 
+que proporciona visualizaciones atractivas y detalladas de los resultados de las 
+pruebas. pytest se puede integrar fácilmente con Allure para generar reportes 
+HTML completos
+
+Puedes ver la documentación para instalar y configuarar allure
+    https://allurereport.org/docs/install/
+
+Ejecución de Pruebas con Reportes Allure
+Una vez que Allure está instalado, podemos generar reportes siguiendo estos pasos:
+
+    Ejecutar Pruebas con Allure:
+        Ejecutamos las pruebas usando pytest y especificamos un directorio 
+        donde almacenar los resultados de Allure:
+
+        pytest --alluredir=allure-results
+
+Esto ejecutará las pruebas y guardará los resultados en el directorio allure-results.
+
+Generar el Reporte HTML:
+    Usamos la herramienta de línea de comandos de Allure para generar el reporte
+    HTML a partir de los resultados guardados:
+    
+        allure serve allure-results
+
+    Esto generará el reporte y lo abrirá automáticamente en el navegador web 
+    predeterminado. También podemos generar el reporte sin abrir el servidor:
+
+        allure generate allure-results -o allure-report
+    
+    Para abrir el reporte generado, usamos:
+        
+        allure open allure-report
+
+Desde el reporte generado tambien es posible descargar un un archovo .csv para 
+menejar mejor la información de los test

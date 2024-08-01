@@ -1,0 +1,18 @@
+Navegando a: https://admin-demo.nopcommerce.com/login?returnurl=%2Fadmin%2F
+Rellenando campo //*[@id='Email'] con -> admin@yourstore.com
+Rellenando campo //*[@id='Password'] con -> admin
+
+Dando click en campo: //*[@id='main']/div/div/div/div[2]/div[1]/div/form/div[3]/button
+
+Dando click en campo: /html/body/div[3]/aside/div/div[4]/div/div/nav/ul/li[2]/a
+
+Dando click en campo: /html/body/div[3]/aside/div/div[4]/div/div/nav/ul/li[2]/ul/li[1]/a
+
+Dando click en campo: /html/body/div[3]/div[1]/form[1]/div/div/a
+Rellenando campo //*[@id='Name'] con -> Laptop HP
+Rellenando campo //*[@id='Sku'] con -> HP-B123
+Rellenando campo //*[@id='Price'] con -> 400
+
+El campo seleccionado es: Track inventory
+
+Dando click en campo: //*[@id='product-form']/div[1]/div/button[1]

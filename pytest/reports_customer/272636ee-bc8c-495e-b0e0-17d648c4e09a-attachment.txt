@@ -1,0 +1,13 @@
+
+Dando click en campo: /html/body/div[3]/div[1]/form[1]/div/div/a
+Rellenando campo //*[@id='Email'] con -> jonathan@asdrome.com
+Rellenando campo //*[@id='Password'] con -> admin123
+Rellenando campo //*[@id="FirstName"] con -> Jonathan
+Rellenando campo //*[@id="LastName"] con -> Flores
+
+Dando click en campo: //*[@id="Gender_Male"]
+Rellenando campo //*[@id="DateOfBirth"] con -> 19/05/2000
+Rellenando campo //*[@id="Company"] con -> Asdrome
+Rellenando campo //*[@id="customer-info"]/div[2]/div[10]/div[2]/div/div[1]/div/span/span[1]/span/ul/li/input con -> Registered
+
+Dando click en campo: /html/body/div[3]/div[1]/form/div[1]/div/button[1]/i

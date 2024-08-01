@@ -1,0 +1,7 @@
+Navegando a: https://admin-demo.nopcommerce.com/login?returnurl=%2Fadmin%2F
+Rellenando campo //*[@id='Email'] con -> admin@asdrome.com
+Rellenando campo //*[@id='Password'] con -> admin
+
+Dando click en campo: //*[@id='main']/div/div/div/div[2]/div[1]/div/form/div[3]/button
+No customer account found
+Email incorrecto

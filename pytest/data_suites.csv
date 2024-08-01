@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","655","test_search_costumers","","Thu Aug 01 11:19:18 CST 2024","passed","Thu Aug 01 11:19:19 CST 2024","","test_costumer","",""
+"","9134","test_add_costumer","","Thu Aug 01 11:19:19 CST 2024","passed","Thu Aug 01 11:19:28 CST 2024","","test_costumer","",""

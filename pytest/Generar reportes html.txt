@@ -1,0 +1,35 @@
+Para generar reportes HTML, necesitamos instalar el plugin pytest-html. Este 
+plugin añade la capacidad de generar reportes HTML detallados después de 
+ejecutar las pruebas.
+
+Ejecución de Pruebas con Reportes HTML
+Para generar un reporte HTML, simplemente usamos la opción --html seguida 
+del nombre del archivo que queremos crear. Por ejemplo:
+
+    pytest --html=report.html
+
+Opciones Adicionales
+El plugin pytest-html ofrece varias opciones adicionales para personalizar el 
+reporte.
+
+    Título del Reporte
+        Podemos personalizar el título del reporte usando la opción 
+        --self-contained-html.
+        pytest --html=report.html --self-contained-html
+
+Enlazado de CSS
+Para incluir estilos CSS personalizados en el reporte HTML:
+    pytest --html=report.html --css=styles.css
+
+
+Integración con CI/CD
+Los reportes HTML son especialmente útiles cuando se integran con pipelines de 
+CI/CD, donde podemos generar reportes automáticos después de cada ejecución de 
+pruebas y almacenarlos como artefactos. Esto facilita el seguimiento del estado 
+de las pruebas a lo largo del tiempo.
+
+Después de la ejecución, encontraríamos un archivo report.html en el directorio 
+actual. Al abrir este archivo en un navegador web, veríamos un resumen detallado 
+de las pruebas ejecutadas.
+
+

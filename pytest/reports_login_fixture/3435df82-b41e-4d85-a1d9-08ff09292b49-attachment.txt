@@ -1,0 +1,2 @@
+Navegando a: https://admin-demo.nopcommerce.com/login?returnurl=%2Fadmin%2F
+Rellenando campo //*[@id='Email'] con -> admin@asdrome.com
