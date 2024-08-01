@@ -28,7 +28,7 @@ En este proyecto, utilizamos dos frameworks de pruebas en Python:
 - **pytest**: Este módulo contiene pruebas unitarias utilizando el framework `pytest`. También incluye los siguientes directorios:
   - **allure_reports**: Directorio que contiene los reportes generados por Allure.
   - **html_reports**: Archivo generado con los reportes después de ejecutar las pruebas.
-  - Archivos de prueba: Archivos de prueba que utilizan `pytest` para ejecutar pruebas automatizadas.
+  - **Archivos de prueba**: Archivos de prueba que utilizan `pytest` para ejecutar pruebas automatizadas.
 - **BDD**: Este módulo contiene archivos relacionados con el desarrollo guiado por comportamiento (BDD).
   - **features**: Directorio que contiene los archivos `.feature` escritos en Gherkin, que describen los escenarios de prueba.
   - **steps**: Directorio que contiene los archivos `.py` con la implementación de los pasos (`steps`) para los escenarios de prueba definidos en los archivos `.feature`.
