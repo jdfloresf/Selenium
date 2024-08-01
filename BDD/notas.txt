@@ -1,0 +1,17 @@
+BDD, o Desarrollo Guiado por Comportamiento, es una metodología de desarrollo de
+software que extiende TDD (Test-Driven Development) al involucrar a todos los 
+interesados (desarrolladores, testers y negocio) en el proceso de desarrollo. 
+
+El objetivo principal de BDD es mejorar la comunicación entre los equipos 
+técnicos y no técnicos mediante la creación de escenarios de prueba en lenguaje 
+natural que describen el comportamiento del sistema.
+
+Behave es una herramienta para BDD en Python. Permite escribir pruebas de 
+aceptación utilizando el estilo de Gherkin, un lenguaje estructurado que usa 
+oraciones en lenguaje natural para describir casos de uso. Behave ejecuta estos 
+casos de prueba y verifica que el comportamiento del software cumpla con lo 
+especificado.
+
+Se puede instalar mediente pip
+
+    pip install behave
